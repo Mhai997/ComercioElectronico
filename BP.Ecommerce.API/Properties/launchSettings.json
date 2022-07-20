@@ -9,7 +9,7 @@
     }
   },
   "profiles": {
-    "BP.Ecommerce.API": {
+    "Curso.ComercioElectronico.API": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,

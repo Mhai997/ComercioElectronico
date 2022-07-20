@@ -1,6 +1,6 @@
-﻿using BP.Ecommerce.Application.Dtos;
+﻿using Curso.ComercioElectronico.Application.Dtos;
 
-namespace BP.Ecommerce.Application.ServicesInterfaces
+namespace Curso.ComercioElectronico.Application.ServicesInterfaces
 {
     public interface IProductService
     {

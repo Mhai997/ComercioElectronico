@@ -1,4 +1,4 @@
-﻿using BP.Ecommerce.Domain.Entities;
+﻿using Curso.ComercioElectronico.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;

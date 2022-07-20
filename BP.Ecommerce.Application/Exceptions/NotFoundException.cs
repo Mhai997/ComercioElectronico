@@ -1,4 +1,4 @@
-﻿namespace BP.Ecommerce.Application.Exceptions
+﻿namespace Curso.ComercioElectronico.Application.Exceptions
 {
     [Serializable]
     public class NotFoundException : Exception

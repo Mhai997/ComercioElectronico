@@ -1,4 +1,5 @@
-﻿using BP.Ecommerce.Application.Exceptions;
+﻿
+using Curso.ComercioElectronico.Application.Exceptions;
 using FluentValidation;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;

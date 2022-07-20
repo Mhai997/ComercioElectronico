@@ -1,11 +1,11 @@
-﻿using BP.Ecommerce.Application.ServicesImplementations;
-using BP.Ecommerce.Application.ServicesInterfaces;
+﻿using Curso.ComercioElectronico.Application.ServicesImplementations;
+using Curso.ComercioElectronico.Application.ServicesInterfaces;
 using FluentValidation;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
 
-namespace BP.Ecommerce.Application
+namespace Curso.ComercioElectronico.Application
 {
     public static class ApplicationServiceCollectionExtensions
     {

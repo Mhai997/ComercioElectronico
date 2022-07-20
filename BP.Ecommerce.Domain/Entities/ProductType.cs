@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace BP.Ecommerce.Domain.Entities
+namespace Curso.ComercioElectronico.Domain.Entities
 {
     public class ProductType
     {

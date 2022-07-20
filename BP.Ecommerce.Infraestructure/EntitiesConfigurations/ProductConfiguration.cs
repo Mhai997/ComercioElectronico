@@ -1,4 +1,4 @@
-﻿using BP.Ecommerce.Domain.Entities;
+﻿using Curso.ComercioElectronico.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BP.Ecommerce.Infraestructure.EntitiesConfigurations
+namespace Curso.ComercioElectronico.Infraestructure.EntitiesConfigurations
 {
     public class ProductConfiguration : IEntityTypeConfiguration<Product>
     {

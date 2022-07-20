@@ -1,9 +1,9 @@
 ﻿using AutoMapper;
-using BP.Ecommerce.Application.Dtos;
-using BP.Ecommerce.Application.DTOs;
-using BP.Ecommerce.Domain.Entities;
+using Curso.ComercioElectronico.Application.Dtos;
 
-namespace BP.Ecommerce.API.Utils
+using Curso.ComercioElectronico.Domain.Entities;
+
+namespace Curso.ComercioElectronico.API.Utils
 {
     public class MappingProfile : Profile
     {

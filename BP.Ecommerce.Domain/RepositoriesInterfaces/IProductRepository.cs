@@ -1,6 +1,6 @@
-﻿using BP.Ecommerce.Domain.Entities;
+﻿using Curso.ComercioElectronico.Domain.Entities;
 
-namespace BP.Ecommerce.Domain.RepositoryInterfaces
+namespace Curso.ComercioElectronico.Domain.RepositoryInterfaces
 {
     public interface IProductRepository
     {

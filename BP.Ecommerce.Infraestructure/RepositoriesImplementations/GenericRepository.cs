@@ -1,29 +1,38 @@
-﻿using Curso.ComercioElectronico.Domain.Entities;
-using Curso.ComercioElectronico.Domain.RepositoryInterfaces;
+﻿using BP.Ecommerce.Domain.Entities;
+using Curso.ComercioElectronico.Domain.RepositoriesInterfaces;
 using Curso.ComercioElectronico.Infraestructure.Data;
-using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Curso.ComercioElectronico.Infraestructure.RepositoriesImplementations
 {
-    public class ProductRepository : IProductRepository
+    public class GenericRepository<T> : IGenericRepository<T> where T : CatalogueEntity
     {
         private readonly ComercioElectronicoDbContext context;
-
-        public ProductRepository(ComercioElectronicoDbContext context)
+        public GenericRepository(ComercioElectronicoDbContext context)
         {
+        
             this.context = context;
         }
 
-        public async Task DeleteByIdAsync(Product product)
+        public async Task DeleteByIdAsync(T item)
         {
-            context.Remove(product);
+            context.Remove(item);
             await context.SaveChangesAsync();
         }
 
-        public async Task<IQueryable<Product>> GetQueryable(string search, int limit, int offset, string sort, string order)
+        public IQueryable<T> GetAllAsync()
         {
+            throw new NotImplementedException();
+        }
+
+        public async Task<List<T>> GetQueryable(string search, int limit, int offset, string sort, string order)
+        {
+            var query = context.Set<T>().Where(t => t.Status == true);
             
-            var query = context.Products.Where(b => b.Status == true);
 
             //Search
             if (!string.IsNullOrEmpty(search))
@@ -58,31 +67,19 @@ namespace Curso.ComercioElectronico.Infraestructure.RepositoriesImplementations
             return query;
         }
 
-        public async Task<IQueryable<Product>> GetQueryableByIdAsync(Guid id)
+        public Task<IQueryable<T>> GetQueryableByIdAsync(Guid id)
         {
-            var query = context.Products.Where(b => b.Id == id && b.Status == true);
-            Product productExist = await query.SingleOrDefaultAsync();
-            
-            return query;
+            throw new NotImplementedException();
         }
 
-        public async Task<IQueryable<Product>> PostAsync(Product product)
+        public Task<IQueryable<T>> PostAsync(T item)
         {
-            var query = context.Products.Where(b => b.Name == product.Name);
-            
+            throw new NotImplementedException();
+        }
 
-            await context.Products.AddAsync(product);
-            await context.SaveChangesAsync();
-            return query;
-        }
-        public IQueryable<Product> GetAllProducts()
+        public Task PutAsync(T item)
         {
-            return context.Products.AsQueryable();
-        }
-        public async Task PutAsync(Product product)
-        {
-            context.Update(product);
-            await context.SaveChangesAsync();
+            throw new NotImplementedException();
         }
     }
 }

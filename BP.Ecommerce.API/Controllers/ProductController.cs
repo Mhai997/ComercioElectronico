@@ -1,8 +1,8 @@
-﻿using BP.Ecommerce.Application.Dtos;
-using BP.Ecommerce.Application.ServicesInterfaces;
+﻿using Curso.ComercioElectronico.Application.Dtos;
+using Curso.ComercioElectronico.Application.ServicesInterfaces;
 using Microsoft.AspNetCore.Mvc;
 
-namespace BP.Ecommerce.API.Controllers
+namespace Curso.ComercioElectronico.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

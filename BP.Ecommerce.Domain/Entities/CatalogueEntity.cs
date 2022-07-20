@@ -1,13 +1,10 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Curso.ComercioElectronico.Domain.Entities
+namespace BP.Ecommerce.Domain.Entities
 {
-    public class Brand 
+    public class CatalogueEntity : AuditoryEntity
     {
-        [Key]
         public Guid Id { get; set; }
-
-        [Required, MaxLength(30)]
         public string Name { get; set; }
     }
 }

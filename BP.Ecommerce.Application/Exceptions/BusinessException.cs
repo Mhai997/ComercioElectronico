@@ -1,4 +1,4 @@
-﻿namespace BP.Ecommerce.Application.Exceptions
+﻿namespace Curso.ComercioElectronico.Application.Exceptions
 {
     /// <summary>
     /// Exception para lanzar error por el incumplimiento de reglas negocios

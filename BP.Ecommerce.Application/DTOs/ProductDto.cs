@@ -1,4 +1,4 @@
-﻿namespace BP.Ecommerce.Application.Dtos
+﻿namespace Curso.ComercioElectronico.Application.Dtos
 {
     public class ProductDto
     {

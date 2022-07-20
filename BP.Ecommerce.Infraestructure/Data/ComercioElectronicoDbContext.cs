@@ -1,9 +1,9 @@
-﻿using BP.Ecommerce.Domain.Entities;
+﻿using Curso.ComercioElectronico.Domain.Entities;
 using Curso.ComercioElectronico.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 
-namespace BP.Ecommerce.Infraestructure.Data
+namespace Curso.ComercioElectronico.Infraestructure.Data
 {
     public class ComercioElectronicoDbContext : DbContext
     {
@@ -19,6 +19,13 @@ namespace BP.Ecommerce.Infraestructure.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+        }
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+
+            //var conexionLocaldb = @"Server=(localdb)\mssqllocaldb;Database=ComercioElectronicoActual;Trusted_Connection=True";
+
+            //optionsBuilder.UseSqlServer(conexionLocaldb); 
         }
     }
 }

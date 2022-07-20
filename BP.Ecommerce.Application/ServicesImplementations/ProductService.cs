@@ -1,11 +1,11 @@
 ﻿using AutoMapper;
-using BP.Ecommerce.Application.Dtos;
-using BP.Ecommerce.Application.ServicesInterfaces;
-using BP.Ecommerce.Domain.Entities;
-using BP.Ecommerce.Domain.RepositoryInterfaces;
+using Curso.ComercioElectronico.Application.Dtos;
+using Curso.ComercioElectronico.Application.ServicesInterfaces;
+using Curso.ComercioElectronico.Domain.Entities;
+using Curso.ComercioElectronico.Domain.RepositoryInterfaces;
 using Microsoft.EntityFrameworkCore;
 
-namespace BP.Ecommerce.Application.ServicesImplementations
+namespace Curso.ComercioElectronico.Application.ServicesImplementations
 {
     public class ProductService : IProductService
     {

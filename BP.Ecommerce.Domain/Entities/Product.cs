@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace BP.Ecommerce.Domain.Entities
+namespace Curso.ComercioElectronico.Domain.Entities
 {
     public class Product : BaseEntity
     {
