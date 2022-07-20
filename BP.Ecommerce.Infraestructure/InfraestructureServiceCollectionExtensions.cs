@@ -12,7 +12,8 @@ namespace Curso.ComercioElectronico.Infraestructure
         {
           
             services.AddTransient<IProductRepository, ProductRepository>();
-          
+            services.AddTransient<IBrandRepository, BrandRepository>();
+            services.AddTransient<IProductTypeRepository, ProductTypeRepository>();
             return services;
         }
     }

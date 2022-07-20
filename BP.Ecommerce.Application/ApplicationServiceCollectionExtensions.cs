@@ -15,7 +15,8 @@ namespace Curso.ComercioElectronico.Application
          
         
             services.AddScoped<IProductService, ProductService>();
-           
+            services.AddScoped<IProductTypeService, ProductTypeService>();
+            services.AddScoped<IBrandService, BrandService>();
 
             return services;
         }

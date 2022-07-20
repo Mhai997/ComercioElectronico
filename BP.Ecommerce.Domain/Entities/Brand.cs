@@ -9,5 +9,7 @@ namespace Curso.ComercioElectronico.Domain.Entities
 
         [Required, MaxLength(30)]
         public string Name { get; set; }
+
+        public bool Status { get; set; } = true;
     }
 }
